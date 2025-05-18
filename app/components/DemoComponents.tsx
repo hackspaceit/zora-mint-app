@@ -104,7 +104,7 @@ function Card({
       {title && (
         <div className="px-5 py-3 border-b border-[var(--app-card-border)]">
           <h3 className="text-lg font-medium text-[var(--app-foreground)]">
-            {title}
+            Play Game
           </h3>
         </div>
       )}
