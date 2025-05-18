@@ -125,7 +125,7 @@ export function Features({ setActiveTab }: FeaturesProps) {
           <iframe width="100%"
                         height="690"
                         src=
-"https://testnet.kizzy.io/" >
+"https://app.optimism.io/superstacks" >
                 </iframe>
         </ul>
         <Button variant="outline" onClick={() => setActiveTab("home")}>
