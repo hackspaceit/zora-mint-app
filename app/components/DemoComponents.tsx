@@ -130,7 +130,7 @@ export function Features({ setActiveTab }: FeaturesProps) {
         </ul>
         <Button variant="outline" onClick={() => setActiveTab("home")}>
           Mint Score
-        </Button>{{flex: 1}}
+        </Button> <span></span>
         <Button variant="outline" onClick={() => setActiveTab("home")}>
           Back
         </Button>
