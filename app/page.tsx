@@ -23,7 +23,7 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
-import { tradeCoin } from "./components/tradeCoin";
+
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -99,7 +99,7 @@ export default function App() {
         <main className="flex-1">
           {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
           {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
-          <tradeCoin />
+         
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">

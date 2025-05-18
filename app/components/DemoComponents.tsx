@@ -16,6 +16,8 @@ import {
   TransactionStatus,
 } from "@coinbase/onchainkit/transaction";
 import { useNotification } from "@coinbase/onchainkit/minikit";
+// src/main.tsx
+
 
 type ButtonProps = {
   children: ReactNode;
