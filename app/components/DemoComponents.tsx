@@ -128,12 +128,15 @@ export function Features({ setActiveTab }: FeaturesProps) {
 "https://aztect-html5.vercel.app/" >
                 </iframe>
         </ul>
-        <Button variant="outline" onClick={() => setActiveTab("home")}>
+      <center>  <Button variant="outline" onClick={() => setActiveTab("home")}>
           Mint Score
-        </Button> <span></span>
+        </Button>
+        <Button variant="outline" onClick={() => setActiveTab("home")}>
+          More Games
+        </Button> <span></span> <span></span>
         <Button variant="outline" onClick={() => setActiveTab("home")}>
           Back
-        </Button>
+        </Button></center>
       </Card>
     </div>
   );
