@@ -30,7 +30,6 @@ export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-function App() {
   const { chains, switchChain } = useSwitchChain()
   const result = useSwitchChain({
     config,
@@ -130,4 +129,4 @@ function App() {
     </div>
   );
 }
-}
+
