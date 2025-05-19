@@ -23,14 +23,14 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
-import { useSwitchChain } from 'wagmi'
+
 
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-  const { chains, switchChain } = useSwitchChain();
+  
   
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
@@ -107,13 +107,7 @@ export default function App() {
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
-  <div>
-      {chains.map((chain) => (
-        <button key={chain.id} onClick={() => switchChain({ chainId: chain.id })}>
-          {chain.name}
-        </button>
-      ))}
-    </div>
+ 
           <Button
             variant="ghost"
             size="sm"
