@@ -30,7 +30,7 @@ export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-  const { chains, switchChain } = useSwitchChain()
+  const { chains, switchChain } = useSwitchChain();
   
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
