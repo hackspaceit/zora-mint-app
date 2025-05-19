@@ -111,9 +111,10 @@ export default function App() {
         <footer className="mt-2 pt-4 flex justify-center">
  <div>
       {chains.map((chain) => (
-        <button key={chain.id} onClick={() => switchChain({ chainId: chain.id })}>
+        <Button variant="ghost"
+            size="sm" key={chain.id} onClick={() => switchChain({ chainId: chain.id })}>
           {chain.name}
-        </button>
+        </Button>
       ))}
     </div>
           <Button
