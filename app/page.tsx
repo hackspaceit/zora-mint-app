@@ -111,7 +111,7 @@ export default function App() {
  <div>
       {chains.map((chain) => (
         <button key={chain.id} onClick={() => switchChain({ chainId: chain.id })}>
-          Switch to Celo
+          {chain.name}
         </button>
       ))}
     </div>
