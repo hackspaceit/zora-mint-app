@@ -23,13 +23,18 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
-
+import { useSwitchChain } from 'wagmi'
+import { config } from './config'
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
-
+function App() {
+  const { chains, switchChain } = useSwitchChain()
+  const result = useSwitchChain({
+    config,
+  })
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
 
@@ -43,6 +48,8 @@ export default function App() {
     const frameAdded = await addFrame();
     setFrameAdded(Boolean(frameAdded));
   }, [addFrame]);
+
+ 
 
   const saveFrameButton = useMemo(() => {
     if (context && !context.client.added) {
@@ -103,6 +110,13 @@ export default function App() {
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
+ <div>
+      {chains.map((chain) => (
+        <button key={chain.id} onClick={() => switchChain({ chainId: chain.id })}>
+          {chain.name}
+        </button>
+      ))}
+    </div>
           <Button
             variant="ghost"
             size="sm"
@@ -115,4 +129,5 @@ export default function App() {
       </div>
     </div>
   );
+}
 }

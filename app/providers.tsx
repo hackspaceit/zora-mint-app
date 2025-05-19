@@ -2,7 +2,9 @@
 
 import { type ReactNode } from "react";
 import { celo } from "wagmi/chains";
+
 import { MiniKitProvider } from "@coinbase/onchainkit/minikit";
+
 export function Providers(props: { children: ReactNode }) {
   return (
     <MiniKitProvider
