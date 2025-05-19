@@ -31,9 +31,7 @@ export default function App() {
   const [frameAdded, setFrameAdded] = useState(false);
   const [activeTab, setActiveTab] = useState("home");
   const { chains, switchChain } = useSwitchChain();
-  const result = useSwitchChain({
-    config,
-  });
+  
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
 
