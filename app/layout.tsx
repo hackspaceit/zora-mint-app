@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 
-import { MiniKitProvider } from "@coinbase/onchainkit/minikit";
+
 
 export const viewport: Viewport = {
   width: "device-width",
