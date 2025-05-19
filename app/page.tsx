@@ -24,7 +24,7 @@ import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
 import { useSwitchChain } from 'wagmi'
-import { config } from './config'
+
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
