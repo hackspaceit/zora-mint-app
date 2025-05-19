@@ -3,9 +3,14 @@ import "@coinbase/onchainkit/styles.css";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { config } from './config'
+import { useSwitchChain } from 'wagmi'
 
-
-
+function App() {
+  const result = useSwitchChain({
+    config,
+  })
+}
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
