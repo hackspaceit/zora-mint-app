@@ -33,7 +33,7 @@ export default function App() {
   const { chains, switchChain } = useSwitchChain()
   const result = useSwitchChain({
     config,
-  })
+  });
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
 
