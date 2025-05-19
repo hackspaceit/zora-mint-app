@@ -4,16 +4,12 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import { config } from './config'
-import { useChainId } from 'wagmi'
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
-function App() {
-  const chainId = useChainId({
-    config,
-  })
-}
+
 export async function generateMetadata(): Promise<Metadata> {
   const URL = process.env.NEXT_PUBLIC_URL;
   return {
