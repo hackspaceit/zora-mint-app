@@ -99,12 +99,22 @@ export default function App() {
             </div>
           </div>
           <div>{saveFrameButton}</div>
+
+ <script src="https://connect.manifoldxyz.dev/latest/connect.umd.min.js"></script>
+  <link rel="stylesheet" href="https://connect.manifoldxyz.dev/latest/connect.css"></link>         
         </header>
 
         <main className="flex-1">
        {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
           {activeTab === "features" && <Features setActiveTab={setActiveTab} />}   
-         
+        <div  
+    data-widget="m-connect"
+    data-grant-type="<your app grant type, `signature` or `token`>"
+    data-client-id="0bf8e8b10dea77835ed563eface30fd12701213240f32a15630c5ca87a51ddaa"  
+    data-app-name="BaseMint"  
+    data-network="base"
+  >
+  </div>  
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
